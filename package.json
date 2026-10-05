@@ -1,0 +1,14 @@
+{
+  "name": "playwright-validation",
+  "private": true,
+  "scripts": {
+    "test": "playwright test",
+    "test:headed": "playwright test --headed"
+  },
+  "devDependencies": {
+    "@playwright/test": "^1.63.0"
+  },
+  "dependencies": {
+    "xlsx": "^0.18.5"
+  }
+}
