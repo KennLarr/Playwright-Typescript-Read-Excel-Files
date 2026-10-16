@@ -17,5 +17,10 @@ const data = await response.json();
   expect(user).toHaveProperty('name');
   expect(user).toHaveProperty('email');
   expect(user).toHaveProperty('phone');
+  const userId = user.id;
+  const userResponse = await request.get(
+    `https://fake-json-api.mock.beeceptor.com/users/${userId}`
+  );
+  expect(userResponse.status()).toBe(200);
 });
 
