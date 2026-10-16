@@ -8,5 +8,5 @@ test('Login with standard_user', async ({ page }) => {
 
 test('Login with locked_out_user', async ({ page }) => {
         await login(page, 'locked_out_user');
-         await login(page, 'locked_out_user');
+        
 });
