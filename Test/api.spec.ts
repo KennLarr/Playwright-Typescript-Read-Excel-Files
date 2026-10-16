@@ -12,6 +12,6 @@ test('API get test @api', async ({ request }) => {
 const data = await response.json();
 
   console.log(data);
-  
+  console.log(data);
 });
 
